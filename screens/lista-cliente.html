@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bubble Laundry | Clientes</title>
+  <link rel="icon" href="../assets/img/bubble.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=M+PLUS+2&family=Twinkle+Star&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base/base.css" />
+  <link rel="stylesheet" href="../assets/css/componentes/header.css" />
+  <link rel="stylesheet" href="../assets/css/lista-cliente.css" />
+  <link rel="stylesheet" href="../assets/css/componentes/table.css" />
+  <link rel="stylesheet" href="../assets/css/componentes/button.css" />
+  <link rel="stylesheet" href="../assets/css/componentes/modal.css" />
+
+</head>
+
+<body>
+
+  <header class="header container">
+
+    <div class="id__empresa">
+
+      <img src="../assets/img/bubble.png" alt="Logo Bubble Laundry" class="header__logo" />
+      <h1>Bubble Laundry</h1>
+
+    </div>
+
+    <nav>
+      <ul class="header__list-nav">
+        <li class="header__link"><a href="#">Dashboard</a></li>
+        <li class="header__link"><a href="#">Productos</a></li>
+        <li class="header__link"><a href="#">Clientes</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="clientes-container">
+
+    <table class="table">
+
+      <thead>
+        <tr>
+          <th class="table__column--p">Nombre</th>
+          <th class="table__column--g">Email</th>
+          <th class="table__column--m table__align--right">
+            <a href="./registrar-cliente.html" class="simple-button simple-button--add">Nuevo Cliente</a>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody data-table></tbody>
+
+    </table>
+
+  </main>
+
+  <script type="module" src="../controllers/cliente.controller.js"></script>
+
+</body>
+
+</html>
+
+<!-- AJAX Asyncronous JavaScript and XML-->
